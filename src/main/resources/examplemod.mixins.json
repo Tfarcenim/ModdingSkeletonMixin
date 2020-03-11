@@ -1,12 +1,12 @@
 {
   "required": true,
-  "package": "example.examplemod.mixin",
+  "package": "com.example.examplemod.mixin",
   "compatibilityLevel": "JAVA_8",
   "refmap": "examplemod.refmap.json",
   "mixins": [
   ],
   "client":[
-    "ExampleMixin",
+    "ExampleMixin"
   ],
   "injectors": {
     "defaultRequire": 1
