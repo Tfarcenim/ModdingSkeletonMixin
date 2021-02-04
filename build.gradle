@@ -15,7 +15,7 @@ apply plugin: 'org.spongepowered.mixin'
 
 version = "1.0-1.12.2"
 group = 'tfar' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "harvestcrafttweaker"
+archivesBaseName = "${modid}"
 
 sourceCompatibility = targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 compileJava {
