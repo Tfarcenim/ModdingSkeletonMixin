@@ -35,7 +35,8 @@ minecraft {
     // These can be tweaked, removed, or duplicated as needed.
     runs {
         client {
-            property 'mixin.env.disableRefMap', 'true'
+            properties 'mixin.env.remapRefMap': 'true'
+            property 'mixin.env.refMapRemappingFile', "${project.projectDir}/build/createSrgToMcp/output.srg"
             workingDirectory project.file('run')
             arg "-mixin.config="+archivesBaseName+".mixins.json"
 
@@ -51,7 +52,8 @@ minecraft {
         }
 
         server {
-            property 'mixin.env.disableRefMap', 'true'
+            properties 'mixin.env.remapRefMap': 'true'
+            property 'mixin.env.refMapRemappingFile', "${project.projectDir}/build/createSrgToMcp/output.srg"
             workingDirectory project.file('run')
             arg "-mixin.config="+archivesBaseName+".mixins.json"
 
@@ -69,6 +71,8 @@ minecraft {
         data {
             workingDirectory project.file('run')
             //property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+            properties 'mixin.env.remapRefMap': 'true'
+            property 'mixin.env.refMapRemappingFile', "${project.projectDir}/build/createSrgToMcp/output.srg"
             property 'forge.logging.console.level', 'debug'
             args '--mod', 'examplemod', '--all', '--output', file('src/generated/resources/'), '--existing', sourceSets.main.resources.srcDirs[0]
             mods {
