@@ -1,0 +1,15 @@
+[
+{
+  "modid": "examplemod",
+  "name": "Example Mod",
+  "description": "An example description",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Love, Cheese and small house plants"],
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
