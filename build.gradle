@@ -1,6 +1,5 @@
 buildscript {
     repositories {
-        jcenter()
         maven { url = 'https://files.minecraftforge.net/maven' }
         maven { url = 'https://repo.spongepowered.org/maven' }
     }
@@ -43,10 +42,6 @@ jar.manifest.attributes(
 )
 
 repositories {
-    mavenCentral()
-    maven {
-        url 'http://maven.blamejared.com'
-    }
     maven { url = 'https://repo.spongepowered.org/maven' }
 }
 
