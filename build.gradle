@@ -19,7 +19,7 @@ apply plugin: 'eclipse'
 
 
 
-version = mod_version
+version = "$minecraft_version-$mod_version"
 group = mod_group
 archivesBaseName = mod_id
 
